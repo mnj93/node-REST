@@ -1,9 +1,6 @@
 var jwt = require('jsonwebtoken');
-
-var User = require('../models/user');
-const LoginHistory = require('../models/loginHistory');
+const LoginHistory = require('../models/Admin/adminLoginHistory');
 const JWT_SECRET = process.env.JWT_SECRET;
-
 
 const authenticate = function(req,res,next){
     const header = req.headers.authorization;

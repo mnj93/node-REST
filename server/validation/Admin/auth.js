@@ -1,5 +1,5 @@
 const validator = require('validator');
-const formatter = require('../helpers/responseFormatter')
+const formatter = require('../../helpers/responseFormatter')
 
 module.exports.validateLogin  = (req,res,next) => {
     if(Object.keys(req.body).length === 0){        
