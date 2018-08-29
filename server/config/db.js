@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
-var connectionString = 'mongodb://localhost:27017/mma-db';
+
 
 
 mongoose.connect(connectionString,{user:process.env.DB_USER,pass:process.env.DB_PASS,useNewUrlParser: true});
